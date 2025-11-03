@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Neutral Beige Theme - Dhara Jadav Portfolio */
+    --background: 40 25% 85%; /* #D8CFBC - Soft Beige */
+    --foreground: 215 25% 17%; /* #1E293B - Deep Slate Gray */
+
+    --card: 0 0% 100%; /* #FFFFFF - Pure White */
+    --card-foreground: 215 25% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 17%;
+
+    --primary: 38 36% 62%; /* #C0A77B - Soft Golden Sand */
+    --primary-foreground: 215 25% 17%;
+
+    --secondary: 30 18% 54%; /* #9A8873 - Muted Taupe */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 40 20% 92%;
+    --muted-foreground: 215 16% 35%; /* #475569 - Cool Gray */
+
+    --accent: 38 36% 62%;
+    --accent-foreground: 215 25% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 92%;
+    --ring: 38 36% 62%;
+
+    --radius: 0.75rem;
+    
+    /* Custom gradient for buttons and highlights */
+    --gradient-primary: linear-gradient(135deg, hsl(38 36% 62%), hsl(30 18% 54%));
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 40 25% 85%;
+    --sidebar-foreground: 215 25% 17%;
+    --sidebar-primary: 215 25% 17%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 40 20% 92%;
+    --sidebar-accent-foreground: 215 25% 17%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 38 36% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
